@@ -5,7 +5,7 @@
   "description": "MCP (Model Context Protocol) server exposing DKG V10 three-layer verifiable memory (Working/Shared/Verifiable) as MCP tools, so any MCP-capable client can read, write, share and query DKG memory without custom HTTP wiring.",
   "license": "Apache-2.0",
   "repo": "https://github.com/kiyeps/dkg-memory-mcp",
-  "commit": "7544fd089450d1c90f936b12db53d6ecddf27c83",
+  "commit": "af95cc43a8fc840b272db3bb343fe2964301de3c",
   "requiresDkgNodeVersion": ">=10.0.0",
   "category": ["agent-memory", "mcp"],
   "memoryLayers": ["WM", "SWM"],
