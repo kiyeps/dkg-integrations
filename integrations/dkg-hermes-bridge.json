@@ -11,7 +11,7 @@
     "contact": "https://github.com/kiyeps"
   },
   "repo": "https://github.com/kiyeps/dkg-hermes-bridge",
-  "commit": "599da6a592759d6da1d6812aa2c490ea5fd486f8",
+  "commit": "64f02f015821759f15d4a5596624301c69d1bc56",
   "license": "Apache-2.0",
   "requiresDkgNodeVersion": ">=10.0.0",
   "memoryLayers": ["WM", "SWM"],
