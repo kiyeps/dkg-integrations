@@ -4,7 +4,7 @@
   "name": "DKG Memory MCP Server",
   "description": "MCP (Model Context Protocol) server exposing DKG V10 three-layer verifiable memory (Working/Shared/Verifiable) as MCP tools, so any MCP-capable client can read, write, share and query DKG memory without custom HTTP wiring.",
   "license": "Apache-2.0",
-  "repo": "https://github.com/kiyeps/dkg-memory-mcp@9b5c90d5bb6a9c0b8741282e4f59a5d3a8cecd02",
+  "repo": "https://github.com/kiyeps/dkg-memory-mcp",
   "commit": "9b5c90d5bb6a9c0b8741282e4f59a5d3a8cecd02",
   "requiresDkgNodeVersion": ">=10.0.0",
   "category": [
@@ -55,7 +55,7 @@
   "maintainer": {
     "github": "@kiyeps",
     "name": "kiyeps",
-    "contact": "https://github.com/kiyeps@9b5c90d5bb6a9c0b8741282e4f59a5d3a8cecd02"
+    "contact": "https://github.com/kiyeps"
   },
   "promotionPath": "WM -> SWM (seals by default, publish-ready) -> VM (later round, explicit human CLI gate only)",
   "fitNotes": "Transport-agnostic MCP tooling layer exposing DKG memory as standard MCP tools. Distinct from the sibling OpenClaw Memory Curator daemon (OpenClaw-specific); this mounts on any MCP client. Round 1 scope: WM + SWM only. No vm/publish tool exposed (Verifiable Memory is a later round and requires an explicit human-gated publish). No UI endorsement/voting tools (disallowed by bounty rules). Secret redaction applied before any literal leaves the process. Smoke-tested live against a DKG V10 node (Base Sepolia testnet): KA create -> WM write -> SPARQL recall verified end-to-end."
