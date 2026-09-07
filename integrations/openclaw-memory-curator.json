@@ -16,7 +16,7 @@
     "contact": "https://github.com/kiyeps"
   },
   "repo": "https://github.com/kiyeps/openclaw-memory-curator",
-  "commit": "afc573ab92d236b1a38b1b9cecf6936798b20c16",
+  "commit": "418cd0819b1531c802df3421c24971dd36665d28",
   "license": "Apache-2.0",
   "requiresDkgNodeVersion": ">=10.0.0",
   "memoryLayers": [
