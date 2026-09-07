@@ -11,9 +11,9 @@
   "maintainer": {
     "github": "@kiyeps",
     "name": "kiyeps",
-    "contact": "https://github.com/kiyeps@7708c1d9418f41140b8c1a16b4e7dda2f131867a"
+    "contact": "https://github.com/kiyeps"
   },
-  "repo": "https://github.com/kiyeps/dkg-hermes-bridge@7708c1d9418f41140b8c1a16b4e7dda2f131867a",
+  "repo": "https://github.com/kiyeps/dkg-hermes-bridge",
   "commit": "7708c1d9418f41140b8c1a16b4e7dda2f131867a",
   "license": "Apache-2.0",
   "requiresDkgNodeVersion": ">=10.0.0",
