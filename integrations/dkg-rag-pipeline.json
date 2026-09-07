@@ -10,9 +10,9 @@
   "maintainer": {
     "github": "@kiyeps",
     "name": "kiyeps",
-    "contact": "https://github.com/kiyeps@b817bcf8d347b0aeef96633f407568f6caf4323b"
+    "contact": "https://github.com/kiyeps"
   },
-  "repo": "https://github.com/kiyeps/dkg-rag-pipeline@b817bcf8d347b0aeef96633f407568f6caf4323b",
+  "repo": "https://github.com/kiyeps/dkg-rag-pipeline",
   "commit": "b817bcf8d347b0aeef96633f407568f6caf4323b",
   "license": "Apache-2.0",
   "requiresDkgNodeVersion": ">=10.0.0",
