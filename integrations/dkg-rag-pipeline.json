@@ -3,31 +3,52 @@
   "slug": "dkg-rag-pipeline",
   "name": "DKG RAG Pipeline",
   "description": "RAG pipeline using DKG V10 Working/Shared Memory as vector-searchable retrieval source with provenance citations. Ingests documents as Knowledge Assets, indexes with local embeddings, and serves ranked chunks to any LLM for grounded generation.",
-  "category": ["infra", "rag"],
+  "category": [
+    "infra",
+    "rag"
+  ],
   "maintainer": {
     "github": "@kiyeps",
     "name": "kiyeps",
-    "contact": "https://github.com/kiyeps"
+    "contact": "https://github.com/kiyeps@b817bcf8d347b0aeef96633f407568f6caf4323b"
   },
-  "repo": "https://github.com/kiyeps/dkg-rag-pipeline",
-  "commit": "7730df879c020f6c9b5df04388ce26e8a05eb60d",
+  "repo": "https://github.com/kiyeps/dkg-rag-pipeline@b817bcf8d347b0aeef96633f407568f6caf4323b",
+  "commit": "b817bcf8d347b0aeef96633f407568f6caf4323b",
   "license": "Apache-2.0",
   "requiresDkgNodeVersion": ">=10.0.0",
-  "memoryLayers": ["WM", "SWM"],
-  "v10PrimitivesUsed": ["ContextGraph", "KnowledgeAsset", "SubGraph"],
-  "publicInterfacesUsed": ["http-api"],
-  "targetAgents": ["generic-CLI", "OpenClaw", "Hermes"],
+  "memoryLayers": [
+    "WM",
+    "SWM"
+  ],
+  "v10PrimitivesUsed": [
+    "ContextGraph",
+    "KnowledgeAsset",
+    "SubGraph"
+  ],
+  "publicInterfacesUsed": [
+    "http-api"
+  ],
+  "targetAgents": [
+    "generic-CLI",
+    "OpenClaw",
+    "Hermes"
+  ],
   "install": {
     "kind": "cli",
     "package": "dkg-rag-pipeline",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "binary": "dkg-rag",
     "usageHint": "dkg-rag ingest <file> && dkg-rag query <text> && dkg-rag serve"
   },
   "security": {
-    "writeAuthority": ["wm/write", "swm/share"],
-    "networkEgress": ["http://127.0.0.1:9200"],
-    "notes": "Local embedding fallback (character n-gram TF vector) — no external API required. Secret redaction gate scans all text and quads before WM write. Auth token read from ~/.dkg/auth.token."
+    "writeAuthority": [
+      "wm/write",
+      "swm/share"
+    ],
+    "networkEgress": [
+      "http://127.0.0.1:9200"
+    ],
+    "notes": "Local embedding fallback (character n-gram TF vector) \u2014 no external API required. Secret redaction gate scans all text and quads before WM write. Auth token read from ~/.dkg/auth.token."
   },
   "trustTier": "community",
   "promotionPath": "Chunks ingested to WM as provenance-tagged Knowledge Assets. Frequently retrieved chunks can be promoted to SWM (sealed) via swm/share, making them available as Verified Memory candidates for downstream oracle consumption.",
