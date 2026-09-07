@@ -13,9 +13,9 @@
   "maintainer": {
     "github": "@kiyeps",
     "name": "kiyeps",
-    "contact": "https://github.com/kiyeps@41f6e8f66934a945e80ad4e3de1bb32a8675a8ef"
+    "contact": "https://github.com/kiyeps"
   },
-  "repo": "https://github.com/kiyeps/openclaw-memory-curator@41f6e8f66934a945e80ad4e3de1bb32a8675a8ef",
+  "repo": "https://github.com/kiyeps/openclaw-memory-curator",
   "commit": "41f6e8f66934a945e80ad4e3de1bb32a8675a8ef",
   "license": "Apache-2.0",
   "requiresDkgNodeVersion": ">=10.0.0",
