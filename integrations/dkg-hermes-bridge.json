@@ -4,30 +4,50 @@
   "slug": "dkg-hermes-bridge",
   "name": "Hermes DKG Memory Bridge",
   "description": "Hermes crypto agent action audit trail + decision recall on DKG V10 memory. Records on-chain actions (swap, bridge, mint, deploy) as provenance-tagged Knowledge Assets in DKG Working/Shared Memory, forming an immutable, queryable audit trail. Enables decision recall via SPARQL queries.",
-  "category": ["agent-memory", "hermes"],
+  "category": [
+    "agent-memory",
+    "hermes"
+  ],
   "maintainer": {
     "github": "@kiyeps",
     "name": "kiyeps",
-    "contact": "https://github.com/kiyeps"
+    "contact": "https://github.com/kiyeps@7708c1d9418f41140b8c1a16b4e7dda2f131867a"
   },
-  "repo": "https://github.com/kiyeps/dkg-hermes-bridge",
-  "commit": "cc8b386299996740620f25a908953c6d5e2e2628",
+  "repo": "https://github.com/kiyeps/dkg-hermes-bridge@7708c1d9418f41140b8c1a16b4e7dda2f131867a",
+  "commit": "7708c1d9418f41140b8c1a16b4e7dda2f131867a",
   "license": "Apache-2.0",
   "requiresDkgNodeVersion": ">=10.0.0",
-  "memoryLayers": ["WM", "SWM"],
-  "v10PrimitivesUsed": ["ContextGraph", "KnowledgeAsset", "SubGraph"],
-  "publicInterfacesUsed": ["http-api"],
-  "targetAgents": ["Hermes", "generic-CLI"],
+  "memoryLayers": [
+    "WM",
+    "SWM"
+  ],
+  "v10PrimitivesUsed": [
+    "ContextGraph",
+    "KnowledgeAsset",
+    "SubGraph"
+  ],
+  "publicInterfacesUsed": [
+    "http-api"
+  ],
+  "targetAgents": [
+    "Hermes",
+    "generic-CLI"
+  ],
   "install": {
     "kind": "cli",
     "package": "dkg-hermes-bridge",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "binary": "hermes-dkg",
     "usageHint": "Run 'hermes-dkg status' to check DKG node status, 'hermes-dkg audit <action-json>' to record a Hermes action to DKG WM."
   },
   "security": {
-    "writeAuthority": ["wm/write", "swm/share"],
-    "networkEgress": ["http://127.0.0.1:9200"],
+    "writeAuthority": [
+      "wm/write",
+      "swm/share"
+    ],
+    "networkEgress": [
+      "http://127.0.0.1:9200"
+    ],
     "notes": "Hermes security model preserved: no auto-sign, no auto-publish, Spend Governor respected. SWM promotion is explicit via 'promote' subcommand. All secrets redacted before leaving the process. No vm/publish in Round 1 scope."
   },
   "trustTier": "community",
