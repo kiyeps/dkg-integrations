@@ -14,7 +14,7 @@
     "contact": "https://github.com/kiyeps"
   },
   "repo": "https://github.com/kiyeps/dkg-hermes-bridge",
-  "commit": "7708c1d9418f41140b8c1a16b4e7dda2f131867a",
+  "commit": "daa745cd289c4ee69bc23f09d5ef940b0aa44d0d",
   "license": "Apache-2.0",
   "requiresDkgNodeVersion": ">=10.0.0",
   "memoryLayers": [
@@ -36,7 +36,7 @@
   "install": {
     "kind": "cli",
     "package": "dkg-hermes-bridge",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "binary": "hermes-dkg",
     "usageHint": "Run 'hermes-dkg status' to check DKG node status, 'hermes-dkg audit <action-json>' to record a Hermes action to DKG WM."
   },
@@ -52,5 +52,7 @@
   },
   "trustTier": "community",
   "promotionPath": "Actions recorded to Working Memory can be promoted to Shared Working Memory via explicit 'promote' command. Repeated references to the same token/action type auto-promote to SWM (sealed). VM publish stays explicit-gated (not in Round 1 scope).",
-  "fitNotes": "Hermes-specific action audit trail, distinct from OpenClaw curator (PR #26) and DKG Memory MCP Server (PR #27). Plugs into Hermes's action dispatch so crypto operations are memory-backed by default, with governance-aware write path that respects Hermes's Spend Governor boundaries."
+  "fitNotes": "Hermes-specific action audit trail, distinct from OpenClaw curator (PR #26) and DKG Memory MCP Server (PR #27). Plugs into Hermes's action dispatch so crypto operations are memory-backed by default, with governance-aware write path that respects Hermes's Spend Governor boundaries.",
+  "demo": "https://github.com/kiyeps/dkg-hermes-bridge/blob/main/docs/demo-transcript.txt",
+  "designBrief": "https://github.com/kiyeps/dkg-hermes-bridge/blob/main/docs/DESIGN.md"
 }
