@@ -16,7 +16,7 @@
     "contact": "https://github.com/kiyeps"
   },
   "repo": "https://github.com/kiyeps/openclaw-memory-curator",
-  "commit": "418cd0819b1531c802df3421c24971dd36665d28",
+  "commit": "36dd92297cd5efda2059f170b00e38752b9defa6",
   "license": "Apache-2.0",
   "requiresDkgNodeVersion": ">=10.0.0",
   "memoryLayers": [
@@ -56,7 +56,7 @@
       "POST /api/knowledge-assets/:name/vm/publish (explicit CLI gate only)"
     ],
     "credentialsHandled": [],
-    "notes": "Reads DKG auth token from ~/.dkg/auth.token (line 2, comment lines stripped). Scans OpenClaw workspace memory files (~/.openclaw/workspace/memory/*.md) and redacts obvious secrets (private keys, API tokens, mnemonic phrases) before any quad leaves the process. VM promotion is explicit-only via 'curator publish <ka>' CLI command \u2014 never automatic. SWM share uses entities:'all' (seals by default, publish-ready). All HTTP egress restricted to local DKG node at http://127.0.0.1:9200. No third-party services contacted. Zero npm dependencies; uses only Node.js v24 built-ins."
+    "notes": "Reads DKG auth token from ~/.dkg/auth.token (line 2, comment lines stripped). Scans OpenClaw workspace memory files (~/.openclaw/workspace/memory/*.md) and redacts obvious secrets (private keys, API tokens, mnemonic phrases) before any quad leaves the process. ROUND 1 SCOPE JUSTIFICATION: the only declared VM operation (POST /api/knowledge-assets/:name/vm/publish) is the documented end of the WM->SWM->VM promotion path and is reachable exclusively through the explicit interactive 'curator publish <ka>' CLI command (y/n confirmation gate); it is never invoked automatically, never invoked by the daemon loop, and no other VM operation (/endorse, /verify, /update) is declared or used. All Round-1 functionality (ingest, recall, share, list, daemon) operates purely in WM/SWM. The VM declaration is kept for declaration accuracy, not because Round-1 features depend on it. SWM share uses entities:'all' (seals by default, publish-ready). All HTTP egress restricted to the local DKG node at http://127.0.0.1:9200. No third-party services contacted. Zero npm dependencies; uses only Node.js v24 built-ins."
   },
   "trustTier": "community",
   "promotionPath": "Working Memory artifacts mature to Shared Working Memory via automatic maturity tracking (reference count >= 3 in later memory files, or explicit share: frontmatter tag) or manual 'curator share <ka>' CLI command. SWM share seals assertions by default (EIP-712), making them publish-ready. Verifiable Memory promotion is gated behind explicit 'curator publish <ka>' CLI command with interactive confirmation \u2014 never automatic, satisfying the bounty rule that UI endorsement is disallowed. This deterministic WM \u2192 SWM \u2192 VM pipeline ensures auditable, human-controlled promotion of workspace knowledge into on-chain verifiable form.",
