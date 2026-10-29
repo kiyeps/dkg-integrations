@@ -36,7 +36,7 @@
   "install": {
     "kind": "cli",
     "package": "dkg-hermes-bridge",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "binary": "hermes-dkg",
     "usageHint": "Run 'hermes-dkg status' to check DKG node status, 'hermes-dkg audit <action-json>' to record a Hermes action to DKG WM."
   },
